@@ -461,9 +461,9 @@ height: 112px;
     text-align: center;
 }
 .socials-list {
-display: flex;
-    justify-content: center;
-    gap: 24px;
+position: relative;
+display: inline-block;
+   
 }
 
 .socials-item {
@@ -473,9 +473,10 @@ background-color: var(--iris);
 border-radius: 50%;
 }
 
-.socials-list-item {
-    
+.socials-list-item:first-child {
+    position: absolute;
 }
+
 
 /* section five */
 
