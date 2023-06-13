@@ -62,7 +62,7 @@
       <section class="section hero-section">
         <div class="container cont-one">
           <h1 class="page-header">Effective Solutions for Your Business</h1>
-          <button class="button hero-button" type="button">
+          <button class="button hero-button" type="button" data-modal-open>
             Order Service
           </button>
         </div>
@@ -288,5 +288,11 @@
         </p>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="modal-btn" data-modal-close>x</button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
