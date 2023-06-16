@@ -54,6 +54,7 @@ body {
         color: var(--navy-blue);
         text-decoration: none;
         
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 li {
@@ -133,7 +134,7 @@ address {
     color: #404bbf;
 }
 .address-item {
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+   
 }
 .page-header {
     font-family: 'Roboto';
@@ -286,8 +287,8 @@ footer {
         0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
-.app-item:hover p,
-.app-item:focus p {
+.app-item:hover .app-wrap,
+.app-item:focus .app-wrap {
 transform: translateY(0%);
 }
 
@@ -413,12 +414,12 @@ padding: 100px 0;
 }
 
 .footer-prg {
+    margin-bottom: 16px;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #FFFFFF;
-    margin-bottom: 16px;
 }
 .footer-socials-list {
     display: flex;
@@ -497,9 +498,11 @@ height: 40px;
     display: flex;
     gap: 24px;
 }
+
 .benefits-item {
     flex-basis: calc((100% - 72px) / 4);
 }
+
 .header-three {
     margin-bottom: 8px;
 }
@@ -513,6 +516,7 @@ height: 40px;
     border-radius: 4px;
     margin-bottom: 8px;
 }
+
 /* section three */
 
 .section-three {
@@ -551,9 +555,7 @@ height: 40px;
         border-radius: 0px 0px 4px 4px;
         text-align: center;
 }
-.socials-cont {
-    padding: 32px 0;
-}
+
 .team-wrapper {
     padding: 32px 16px;
    
@@ -620,7 +622,6 @@ padding: 120px 0;
     gap: 24px;
 }
 .apps-item {
-    /* width: calc(100% - 5) / 6; */
     background-color: var(--white);
     border: 1px solid var(--light-slate);
         border-radius: 4px;
@@ -634,12 +635,10 @@ padding: 120px 0;
 
 }
 .customers-header {
-    margin-bottom: 72px;
     color: #2e2f42;
     line-height: 1.11;
     font-size: 36px;
-
-
+    margin-bottom: 72px;
 }
 
 .apps-link {
